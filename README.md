@@ -1,72 +1,49 @@
-![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
+<p align="center"> <a href="https://neo-shade.com"> <img src="https://neo-shade.com/wp-content/uploads/2025/07/NeoLegacyBanner.jpg" height="180"> </a> <h1 align="center"> Neo Automations </h1> </p> <p align="center"> <a href="https://x.com/neoshade2025"> <img src="https://img.shields.io/badge/X-Twitter-black?style=for-the-badge&logo=twitter&logoColor=white"> </a> <a href="https://youtube.com/@neoshade"> <img src="https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"> </a> <a href="https://social.neo-shade.com"> <img src="https://img.shields.io/badge/NeoShade%20Social-Join-blueviolet?style=for-the-badge&logo=discourse&logoColor=white"> </a> </p>
+🤖 What is Neo Automations?
+Neo Automations is the automation and agent logic engine behind NeoLegacy. It runs task flows, conditional triggers, memory updates, and scheduled actions across the NeoShade ecosystem. It’s how your AI legacy thinks, adapts, and acts — with purpose.
 
-# n8n - Secure Workflow Automation for Technical Teams
+✨ Features
+⚙️ Event Triggers – Based on time, emotion, memory, or child profile data
 
-n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.
+🔁 Recurring Actions – Weekly reflections, birthday messages, check-ins
 
-![n8n.io - Screenshot](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot-readme.png)
+🧠 Swarm Agent Logic – Modular tasks run in coordination across AI agents
 
-## Key Capabilities
+📦 Secure Automation – Tied into wallet auth, child identity, and vault status
 
-- **Code When You Need It**: Write JavaScript/Python, add npm packages, or use the visual interface
-- **AI-Native Platform**: Build AI agent workflows based on LangChain with your own data and models
-- **Full Control**: Self-host with our fair-code license or use our [cloud offering](https://app.n8n.cloud/login)
-- **Enterprise-Ready**: Advanced permissions, SSO, and air-gapped deployments
-- **Active Community**: 400+ integrations and 900+ ready-to-use [templates](https://n8n.io/workflows)
+🔄 Dynamic Memory Updates – Keeps your legacy system intelligent over time
 
-## Quick Start
+⚙️ Tech Stack
+Node.js or Python task runners
 
-Try n8n instantly with [npx](https://docs.n8n.io/hosting/installation/npm/) (requires [Node.js](https://nodejs.org/en/)):
+Firebase Functions / Firestore triggers
 
-```
-npx n8n
-```
+Redis or BullMQ (for queues)
 
-Or deploy with [Docker](https://docs.n8n.io/hosting/installation/docker/):
+Compatible with n8n or custom scripts
 
-```
-docker volume create n8n_data
-docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
-```
+Ready for LLM plugin and agent calls
 
-Access the editor at http://localhost:5678
+📦 Setup
+bash
+Copy
+Edit
+git clone https://github.com/Jonnygeo/neo-automations.git
+cd neo-automations
+npm install
+npm run dev
+🔗 Connected Modules
+Module	Role
+NeoLegacy	Dashboard and interface for automation control
+neo-msg-deliver	Executes messages or drops when triggers match
+neo-voice-core	Sends voice prompts or time-based recordings
+NeoLegacy-Vault-Core	Pulls memory and user data for logic decisions
+neo-crypto-guard	Checks access and verifies permissions
 
-## Resources
+📜 License
+Private — For internal use across NeoLegacy and NeoShade AI only.
 
-- 📚 [Documentation](https://docs.n8n.io)
-- 🔧 [400+ Integrations](https://n8n.io/integrations)
-- 💡 [Example Workflows](https://n8n.io/workflows)
-- 🤖 [AI & LangChain Guide](https://docs.n8n.io/langchain/)
-- 👥 [Community Forum](https://community.n8n.io)
-- 📖 [Community Tutorials](https://community.n8n.io/c/tutorials/28)
+👤 Author
+Created by JokerJonny (Jonathan)
+“This isn’t just automation — it’s conscience on code.”
 
-## Support
-
-Need help? Our community forum is the place to get support and connect with other users:
-[community.n8n.io](https://community.n8n.io)
-
-## License
-
-n8n is [fair-code](https://faircode.io) distributed under the [Sustainable Use License](https://github.com/n8n-io/n8n/blob/master/LICENSE.md) and [n8n Enterprise License](https://github.com/n8n-io/n8n/blob/master/LICENSE_EE.md).
-
-- **Source Available**: Always visible source code
-- **Self-Hostable**: Deploy anywhere
-- **Extensible**: Add your own nodes and functionality
-
-[Enterprise licenses](mailto:license@n8n.io) available for additional features and support.
-
-Additional information about the license model can be found in the [docs](https://docs.n8n.io/reference/license/).
-
-## Contributing
-
-Found a bug 🐛 or have a feature idea ✨? Check our [Contributing Guide](https://github.com/n8n-io/n8n/blob/master/CONTRIBUTING.md) to get started.
-
-## Join the Team
-
-Want to shape the future of automation? Check out our [job posts](https://n8n.io/careers) and join our team!
-
-## What does n8n mean?
-
-**Short answer:** It means "nodemation" and is pronounced as n-eight-n.
-
-**Long answer:** "I get that question quite often (more often than I expected) so I decided it is probably best to answer it here. While looking for a good name for the project with a free domain I realized very quickly that all the good ones I could think of were already taken. So, in the end, I chose nodemation. 'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with. However, I did not like how long the name was and I could not imagine writing something that long every time in the CLI. That is when I then ended up on 'n8n'." - **Jan Oberhauser, Founder and CEO, n8n.io**
